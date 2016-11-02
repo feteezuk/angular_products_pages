@@ -1,0 +1,22 @@
+<section class="peoplepage">
+<div class="search">
+	<h1>Directory of products</h1>
+	<label>search:</label>
+	<input ng-model="query" placeholder="search products">
+</div>
+
+ <div class="main" >
+ 	<ul class="peoplelist">
+ 		<li class="people cf" ng-animate="animate" ng-repeat="item in people | filter:query">
+ 			<a href="#/more/{{people.indexOf(item)}}">
+ 			
+ 				<h4>{{item.name | uppercase}}</h4>
+ 			
+			</a>
+ 		</li>
+ 	
+ 	</ul>
+ 	
+ </div>
+
+ </section>

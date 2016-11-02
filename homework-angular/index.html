@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+	<title>Homework 5 - Angular</title>
+
+	<script src="angular.min.js"></script>
+  <script src="angular-route.min.js"></script>
+  <script src="angular-animate.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controller.js"></script>
+     <link rel="stylesheet" href="css/style.css">
+
+ </head>
+
+ <body>
+
+
+
+ <div ng-view class="main">
+ 	
+ 	
+ </div>
+
+
+
+ </body>
+
+ <!--  <body ng-app="ViewProduct">
+    <p>See more details about: <a href="#prod1">Product 1</a>, <a href="#prod2">Product 2</a>, <a href="#prod3">Product 3</a>, <a href="#prod4">Product 4</a></p>
+    <div ng-view>
+      
+    </div> -->
+    <!-- <script src="angular.js"></script>
+	<script src="angular-route.js"></script>
+    <script>
+       angular.module('ViewProduct', ['ngRoute'])
+	    .config(['$routeProvider', function($routeProvider) {
+		   $routeProvider
+		     .when ('/prod1', {
+			   templateUrl: 'prod1.json'
+			 })
+			 .when ('/prod2', {
+			   templateUrl: 'prod2.html'
+			 })
+		     .when ('/prod3', {
+			   templateUrl: 'prod3.html'
+			 })
+			 .when ('/prod4', {
+			   templateUrl: 'prod4.html'
+			 })           
+			 .otherwise ({
+			   redirectTo: '/prod1'
+			 });
+		}]);
+    </script>
+  </body> -->
+</html>
